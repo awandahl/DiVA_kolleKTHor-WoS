@@ -73,7 +73,7 @@ Skriptet är tänkt som ett **syskon** till Crossref‑skriptet i [**DiVA_kolleK
 
 Detta skript är riktat till:
 
-- **Bibliometriker**, bibliotekarier och **forskningsadministratörer** vid KTH (eller andra DiVA‑anslutna lärosäten) som vill:
+- Bibliotekarier och metadata-arbetare vid KTH (eller andra DiVA‑anslutna lärosäten) som vill:
     - komplettera DiVA‑poster med **saknade ISI‑ID**,
     - förbereda data för **citeringsanalys** och andra bibliometriska studier,
     - få en reproducerbar, skriptbaserad process parallell med Crossref‑baserade DOI‑kompletteringar.
