@@ -116,18 +116,12 @@ De viktigaste inställningarna ligger i toppen av skriptet:
 
 Detta WoS‑skript är tänkt att:
 
-- komplettera Crossref‑skriptet i **DiVA_kolleKTHor**,
+- komplettera Crossref‑skriptet i [**DiVA_kolleKTHor-CR**](https://github.com/awandahl/DiVA_kolleKTHor-CR)‑projektet
 - dela samma **struktur, kolumnupplägg och filosofier för matchningslogik**,
 - möjliggöra en **sammanhängande kedja**:
 
 1. Crossref‑skriptet: hitta/förbättra **DOI** för poster utan externa ID.
 2. WoS‑skriptet: utifrån DOI (och vid behov titel/år) fylla i **saknade ISI‑ID/WOS UID**.
-
-Det gör det lätt att:
-
-- diff:a och förstå båda skripten sida‑vid‑sida,
-- återanvända erfarenheter från Crossref‑matchningen,
-- dokumentera samma dataflöde i README och intern dokumentation.
 
 ***
 
