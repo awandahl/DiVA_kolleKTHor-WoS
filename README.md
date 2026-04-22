@@ -73,14 +73,14 @@ Skriptet är tänkt som ett **syskon** till Crossref‑skriptet i **DiVA_kolleKT
 
 Detta skript är riktat till:
 
-- **Bibliometrer**, bibliotekarier och **forskningsadministratörer** vid KTH (eller andra DiVA‑anslutna lärosäten) som vill:
+- **Bibliometriker**, bibliotekarier och **forskningsadministratörer** vid KTH (eller andra DiVA‑anslutna lärosäten) som vill:
     - komplettera DiVA‑poster med **saknade ISI‑ID**,
     - förbereda data för **citeringsanalys** och andra bibliometriska studier,
     - få en reproducerbar, skriptbaserad process parallell med Crossref‑baserade DOI‑kompletteringar.
 
 Programmets design gör det lämpligt att:
 
-- köras **årsvis** eller för valda spänn av år,
+- köras **årsvis** eller för valda spann av år,
 - integreras i en återkommande **datakvalitetsrutin**,
 - jämföras sida vid sida med Crossref‑skriptet i samma **DiVA_kolleKTHor**‑miljö.
 
@@ -88,20 +88,21 @@ Programmets design gör det lämpligt att:
 
 ## 5. Installation och beroenden (översikt)
 
-Skriptet är implementerat i **Python 3** och använder vanliga paket för datahantering och HTTP‑anrop, i linje med hur README‑filer normalt dokumenterar beroenden.
+Skriptet är implementerat i **Python 3** och använder vanliga paket för datahantering och HTTP‑anrop.
 
-Typiska beroenden (anpassa efter din faktiska `requirements.txt`):
+Typiska beroenden:
 
 - **pandas** – CSV‑/Excel‑hantering
 - **requests** – API‑anrop mot Web of Science Starter API
 - **tqdm** – progressbar i terminalen
-- eventuella ytterligare paket för Excel‑skrivning (t.ex. `openpyxl` eller `xlsxwriter`)
+- **datetime** – paket för datum/tid
+- **xlsxwriter** – paket för Excel‑skrivning
 
 ***
 
 ## 6. Konfiguration
 
-De viktigaste inställningarna ligger i toppen av skriptet eller kan anges via kommandoraden (om du har lagt till `argparse`):
+De viktigaste inställningarna ligger i toppen av skriptet:
 
 - **Input‑fil:** sökväg till DiVA‑CSV
 - **Output‑filer:** basnamn för CSV + Excel
