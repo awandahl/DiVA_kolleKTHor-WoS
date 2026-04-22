@@ -7,7 +7,7 @@
 
 **Detta program läser en KTH DiVA‑export (CSV) för ett valt år/intervall, hittar publikationer som saknar ISI‑ID (Web of Science UID), och försöker fylla på dessa genom att fråga Web of Science Starter API i två steg.**
 
-Skriptet är tänkt som ett **syskon** till Crossref‑skriptet i **DiVA_kolleKTHor**‑projektet:
+Skriptet är tänkt som ett **syskon** till Crossref‑skriptet i [**DiVA_kolleKTHor-CR**](https://github.com/awandahl/DiVA_kolleKTHor-CR)‑projektet:
 
 - Samma grundstruktur och kodlayout.
 - Liknande kolumnnamn och utdataformat.
